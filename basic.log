@@ -1,0 +1,229 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 13:39:12] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 13:39:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Aser\PycharmProjects\lession_12_3\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Aser\PycharmProjects\lession_12_3\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Aser\PycharmProjects\lession_12_3\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Aser\PycharmProjects\lession_12_3\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Aser\PycharmProjects\lession_12_3\main\views.py", line 18, in search_page
+    logging.INFO(f'Поиск: {substr}')
+TypeError: 'int' object is not callable
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 13:40:12] "[35m[1mGET /search?s=тест HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 13:43:38] "GET /search?s=тест HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 13:43:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 13:43:38] "[36mGET /uploads/12688-big-15373004300.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 13:43:43] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 13:43:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 13:47:09] "GET /search?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 13:47:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 13:47:57] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 13:47:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Aser\PycharmProjects\lession_12_3\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Aser\PycharmProjects\lession_12_3\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Aser\PycharmProjects\lession_12_3\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Aser\PycharmProjects\lession_12_3\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Aser\PycharmProjects\lession_12_3\main\views.py", line 18, in search_page
+    logging.INFO('поиск')
+TypeError: 'int' object is not callable
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 13:48:02] "[35m[1mGET /search?s=ага HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 13:48:38] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 13:48:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 13:48:42] "GET /search?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 13:48:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 13:53:20] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 13:53:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 13:53:22] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 13:53:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Aser\PycharmProjects\lession_12_3\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Aser\PycharmProjects\lession_12_3\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Aser\PycharmProjects\lession_12_3\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Aser\PycharmProjects\lession_12_3\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Aser\PycharmProjects\lession_12_3\loader\views.py", line 24, in loader_new_post
+    logging.INFO('Загружено не изображение')
+TypeError: 'int' object is not callable
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 13:53:37] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 13:56:48] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 13:56:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Aser\PycharmProjects\lession_12_3\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Aser\PycharmProjects\lession_12_3\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Aser\PycharmProjects\lession_12_3\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Aser\PycharmProjects\lession_12_3\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Aser\PycharmProjects\lession_12_3\main\views.py", line 18, in search_page
+    logging.INFO(f'Поиск: {substr}')
+TypeError: 'int' object is not callable
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 13:57:06] "[35m[1mGET /search?s=тест HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 13:58:25] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 13:58:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Aser\PycharmProjects\lession_12_3\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Aser\PycharmProjects\lession_12_3\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Aser\PycharmProjects\lession_12_3\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Aser\PycharmProjects\lession_12_3\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Aser\PycharmProjects\lession_12_3\main\views.py", line 18, in search_page
+    logging.INFO(f'Поиск:')
+TypeError: 'int' object is not callable
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 13:58:30] "[35m[1mGET /search?s=тест HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 13:59:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 13:59:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Aser\PycharmProjects\lession_12_3\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Aser\PycharmProjects\lession_12_3\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Aser\PycharmProjects\lession_12_3\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Aser\PycharmProjects\lession_12_3\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Aser\PycharmProjects\lession_12_3\main\views.py", line 18, in search_page
+    logging.INFO('Поиск:')
+TypeError: 'int' object is not callable
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 13:59:37] "[35m[1mGET /search?s=тест HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 14:00:51] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 14:00:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 14:00:56] "GET /search?s=тест HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 14:00:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 14:00:56] "[36mGET /uploads/12688-big-15373004300.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 14:01:04] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 14:01:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\Aser\PycharmProjects\lession_12_3\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Aser\PycharmProjects\lession_12_3\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Aser\PycharmProjects\lession_12_3\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Aser\PycharmProjects\lession_12_3\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Aser\PycharmProjects\lession_12_3\loader\views.py", line 24, in loader_new_post
+    logging.INFO('Загружено не изображение')
+TypeError: 'int' object is not callable
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 14:01:13] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 14:02:12] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 14:02:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 14:02:14] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 14:02:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 14:02:21] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 14:02:25] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 14:04:32] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 14:04:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 14:11:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 14:11:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Поиск: ага
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 14:11:35] "GET /search?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 14:11:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 14:11:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 14:11:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 14:12:35] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 14:12:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Загружено не изображение
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 14:12:42] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 14:13:48] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 14:13:51] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 14:13:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 15:13:10] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 15:13:10] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 15:13:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 15:13:12] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 15:13:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Поиск: ага
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 15:13:16] "GET /search?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 15:13:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 15:13:20] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 15:13:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Поиск: тест
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 15:13:23] "GET /search?s=тест HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 15:13:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 15:13:23] "GET /uploads/12688-big-15373004300.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 15:13:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 15:13:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 15:13:32] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 15:13:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Загружено не изображение
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 15:13:42] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 15:14:28] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 15:14:32] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jan/2023 15:14:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
